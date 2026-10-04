@@ -5,9 +5,11 @@ import Definition from "./Definition.js";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
+  let [data, setData] = useState("");
 
   function handleResponse(response) {
     console.log(response.data);
+    setData(response.data);
   }
 
   function handleKeyword(event) {
@@ -31,7 +33,7 @@ export default function Dictionary() {
         />
       </form>
       <div>
-        <Definition />
+        <Definition data={data} />
       </div>
     </div>
   );
