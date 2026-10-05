@@ -6,7 +6,7 @@ export default function App() {
     <div className="App">
       <h1>Dictionary</h1>
       <main>
-        <Dictionary />
+        <Dictionary defaultKeyword="Holiday" />
       </main>
       <footer>
         This project was coded by Laura Rahmati and is open-sourced on
