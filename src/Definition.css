@@ -13,20 +13,5 @@
 
 .phonetic-sound {
   margin: 10px;
-}
-
-.word-meaning {
-  margin: 10px;
-  padding: 10px;
-}
-
-.part-of-speech {
-  margin: 10px;
-  font-style: italic;
-}
-
-.word-synonyms {
   opacity: 0.5;
-  margin: 10px;
-  padding: 10px;
 }

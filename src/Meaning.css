@@ -1,0 +1,18 @@
+.part-of-speech {
+  margin: 10px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.word-meaning {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.word-synonyms {
+  opacity: 0.5;
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+}
