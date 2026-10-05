@@ -7,11 +7,12 @@
 
 .dictionary-word {
   margin: 10px;
-  font-size: 28px;
+  font-size: 30px;
   text-transform: capitalize;
 }
 
 .phonetic-sound {
   margin: 10px;
+  font-size: 24px;
   opacity: 0.5;
 }
