@@ -14,7 +14,7 @@ export default function App() {
           href="https://github.com/Laux0/react-dictionary-project"
           target="_blank"
           rel="noreferrer"
-          className="Footer-link"
+          className="footer-link"
         >
           {" "}
           Github.

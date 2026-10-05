@@ -1,0 +1,32 @@
+.about-word {
+  text-align: center;
+  margin: 20px;
+  border: black 1px solid;
+  max-width: 600px;
+}
+
+.dictionary-word {
+  margin: 10px;
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+.phonetic-sound {
+  margin: 10px;
+}
+
+.word-meaning {
+  margin: 10px;
+  padding: 10px;
+}
+
+.part-of-speech {
+  margin: 10px;
+  font-style: italic;
+}
+
+.word-synonyms {
+  opacity: 0.5;
+  margin: 10px;
+  padding: 10px;
+}
