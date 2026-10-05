@@ -26,12 +26,12 @@ export default function Meaning(props) {
         </p>
         <p className="exampleHTML">{exampleHTML}</p>
       </section>
-      <section>
+      <section className="list">
         <ul>
           {props.meaning.synonyms?.map(function (synonym, index) {
             return (
-              <li key={index}>
-                <p className="word-synonyms">{synonym}</p>
+              <li className="word-synonyms" key={index}>
+                {synonym}
               </li>
             );
           })}
