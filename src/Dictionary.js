@@ -32,6 +32,7 @@ export default function Dictionary() {
           onChange={handleKeyword}
         />
       </form>
+      <div className="suggestions">suggested words: sunset, book, lake...</div>
       <div>
         <Definition data={data} />
       </div>

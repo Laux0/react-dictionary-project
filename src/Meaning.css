@@ -1,6 +1,7 @@
 .dictionary-definition section {
   background-color: white;
   margin: 10px;
+  border-radius: 5px;
 }
 
 .part-of-speech {
