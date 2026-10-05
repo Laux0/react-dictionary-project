@@ -2,7 +2,6 @@ import React from "react";
 import "./Meaning.css";
 
 export default function Meaning(props) {
-  console.log(props.meaning);
   let partsOfSpeech = props.meaning.partOfSpeech;
   let wordMeaning = props.meaning.definition;
   let example = props.meaning.example;
