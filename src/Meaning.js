@@ -5,26 +5,38 @@ export default function Meaning(props) {
   let partsOfSpeech = props.meaning.partOfSpeech;
   let wordMeaning = props.meaning.definition;
   let example = props.meaning.example;
-  return (
-    <div className="dictionary-definition">
-      <p className="part-of-speech">{partsOfSpeech}</p>
-      <p className="word-meaning">
-        <strong>Definition: </strong>
-        {wordMeaning}
-      </p>
+  let exampleHTML = null;
+
+  if (example) {
+    exampleHTML = (
       <p className="example">
         <strong>Example: </strong>
         {example}
       </p>
-      <ul>
-        {props.meaning.synonyms?.map(function (synonym, index) {
-          return (
-            <li key={index}>
-              <p className="word-synonyms">{synonym}</p>
-            </li>
-          );
-        })}
-      </ul>
+    );
+  }
+
+  return (
+    <div className="dictionary-definition">
+      <section>
+        <p className="part-of-speech">{partsOfSpeech}</p>
+        <p className="word-meaning">
+          <strong>Definition: </strong>
+          {wordMeaning}
+        </p>
+        <p className="exampleHTML">{exampleHTML}</p>
+      </section>
+      <section>
+        <ul>
+          {props.meaning.synonyms?.map(function (synonym, index) {
+            return (
+              <li key={index}>
+                <p className="word-synonyms">{synonym}</p>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
     </div>
   );
 }

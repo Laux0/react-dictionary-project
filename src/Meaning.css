@@ -1,3 +1,8 @@
+.dictionary-definition section {
+  background-color: white;
+  margin: 10px;
+}
+
 .part-of-speech {
   margin: 10px;
   font-style: italic;
@@ -12,7 +17,7 @@
   text-align: left;
 }
 
-.example {
+.exampleHTML {
   margin: 10px;
   font-size: 18px;
   text-align: left;
