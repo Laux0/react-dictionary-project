@@ -9,7 +9,7 @@ export default function Definition(props) {
     return (
       <div className="about-word">
         <h2 className="dictionary-word">{selectedWord}</h2>
-        <p className="phonetic-sound">{phonetics}</p>
+        <div className="phonetic-sound">{phonetics}</div>
         {props.data.meanings.map(function (meaning, index) {
           return (
             <div key={index}>

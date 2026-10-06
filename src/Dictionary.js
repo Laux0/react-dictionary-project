@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Dictionary.css";
 import Definition from "./Definition.js";
+import Images from "./Images.js";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [data, setData] = useState("");
+  let [image, setImage] = useState("");
   let [loaded, setLoaded] = useState(false);
 
   function handleResponse(response) {
     setData(response.data);
+  }
+
+  function handleImageResponse(response) {
+    setImage(response.data.photos);
   }
 
   function handleKeyword(event) {
@@ -20,6 +26,10 @@ export default function Dictionary(props) {
     let apiKey = "83bco8b8afca3aft80c7a9a59f08542a";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
+
+    let imageApiKey = "83bco8b8afca3aft80c7a9a59f08542a";
+    let imageApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${imageApiKey}`;
+    axios.get(imageApiUrl).then(handleImageResponse);
   }
 
   function handleSubmit(event) {
@@ -47,6 +57,7 @@ export default function Dictionary(props) {
         </div>
         <div>
           <Definition data={data} />
+          <Images image={image} />
         </div>
       </div>
     );

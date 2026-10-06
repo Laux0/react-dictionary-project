@@ -9,22 +9,22 @@ export default function Meaning(props) {
 
   if (example) {
     exampleHTML = (
-      <p className="example">
+      <div className="example">
         <strong>Example: </strong>
         {example}
-      </p>
+      </div>
     );
   }
 
   return (
     <div className="dictionary-definition">
       <section>
-        <p className="part-of-speech">{partsOfSpeech}</p>
-        <p className="word-meaning">
+        <div className="part-of-speech">{partsOfSpeech}</div>
+        <div className="word-meaning">
           <strong>Definition: </strong>
           {wordMeaning}
-        </p>
-        <p className="exampleHTML">{exampleHTML}</p>
+        </div>
+        <div className="exampleHTML">{exampleHTML}</div>
       </section>
       <section className="list">
         <ul>
